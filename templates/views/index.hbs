@@ -1,0 +1,33 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link
+      href='https://unpkg.com/tabulator-tables@5.0.8/dist/css/tabulator.min.css'
+      rel='stylesheet'
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>{{title}}</title>
+  </head>
+  <body
+    <div>
+      <div id="routesLink">
+        <a href="http://localhost:3001/list">Route to fetch all data</a> <br>
+        <a href="http://localhost:3001/list/filter/delhi">Route to filter data by city delhi</a><br>
+        <a href="http://localhost:3001/list/filter/bhubaneshwar">Route to filter data by city bhubaneshwar</a><br>
+        <a href="http://localhost:3001/list/sort/asc">Route to sort temperature data in Ascending order</a><br>
+        <a href="http://localhost:3001/list/sort/desc">Route to sort temperature data in descending order</a><br>
+        <a href="http://localhost:3001/list/min/2021-12-24">Route to show min and max temperature of a specified date</a>(send by changing the date in the url)<br>
+        <h1 id="h1">Data updates automatically every 1 and half minute please wait</h1>
+      </div>
+      <div id='example-table'></div>
+    </div>
+    
+
+    <script src='/app.js'></script>
+    <script
+      src='https://unpkg.com/tabulator-tables@5.0.8/dist/js/tabulator.min.js'
+    ></script>
+  </body>
+</html>
