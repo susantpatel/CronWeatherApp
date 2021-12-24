@@ -5,7 +5,6 @@ const connection = require('../connection');
 
 //GET All data
 router.get('/', (req, res) => {
-  console.log('in list route');
   connection.query('select * from weather_data', (err, results, field) => {
     if (err) {
       console.log(err);
